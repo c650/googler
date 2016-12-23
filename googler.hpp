@@ -74,7 +74,7 @@ namespace Googler {
 
 			res_vec.push_back( item["title"].get<std::string>() + "\n\t" + item["snippet"].get<std::string>() + "\n\t" + item["link"].get<std::string>() );
 
-			if (!(count--))
+			if (!(--count))
 				break;
 		}
 	}
