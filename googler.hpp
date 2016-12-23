@@ -10,8 +10,6 @@ size_t write_to_string(void *ptr, size_t size, size_t nmemb, std::string& stream
 
 void get_json_from_web(const std::string& url , nlohmann::json& json_obj) {
 
-	std::cout << "url = " << url << '\n';
-
 	CURL *curl = curl_easy_init();
 	if (curl) {
 
