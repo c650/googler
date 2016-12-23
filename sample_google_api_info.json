@@ -1,0 +1,5 @@
+{
+	"cx": "YOUR_CX_HERE",
+	"key": "YOUR_API_KEY",
+	"address": "https://www.googleapis.com/customsearch/v1?"
+}
