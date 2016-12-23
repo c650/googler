@@ -69,7 +69,7 @@ namespace Googler {
 							+ "&cx=" + google_api_info["cx"].get<std::string>()
 							+ "&q=" + formatted_query, search_result);
 
-		size_t count = search_result["items"].size() > 3 ? 3 : search_result["items"].size();
+		size_t count = search_result["items"].size() > num_res_to_show ? num_res_to_show : search_result["items"].size();
 		for (auto& item : search_result["items"]) {
 
 			res_vec.push_back( item["title"].get<std::string>() + "\n\t" + item["snippet"].get<std::string>() + "\n\t" + item["link"].get<std::string>() );
